@@ -2,7 +2,6 @@
 
 **The Economics of Prosperity, Expectations, and Disillusionment**
 
-> Why can a society become materially richer while its people grow more pessimistic about the future?
 > なぜ社会全体の物質的な豊かさが増しても、人々は将来の経済的機会に希望を持てなくなり、社会に閉塞感を抱くことがあるのでしょうか。
 
 このシリーズでは、次の関係を順番に検討します。
