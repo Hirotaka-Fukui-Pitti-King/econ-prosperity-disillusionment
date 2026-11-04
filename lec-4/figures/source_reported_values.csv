@@ -1,0 +1,8 @@
+paper,sample,estimand,value,unit,provenance
+Acemoglu & Restrepo 2020,US commuting zones,Wage effect per extra robot / 1000 workers,-0.42,percent,Published abstract
+Acemoglu & Restrepo 2026,US 1980-2016,Share of increase in between-group inequality explained,52.0,percent,QJE published abstract
+Acemoglu & Restrepo 2026,US 1980-2016,Fraction of automation contribution due to rent dissipation,20.0,percent approximately,QJE published abstract
+Wallskog et al. 2026,US within firm,Median worker pay-productivity elasticity,0.04,elasticity,Economic Journal abstract
+Wallskog et al. 2026,US within firm,Top worker pay-productivity elasticity,0.1,elasticity,Economic Journal abstract
+Kline et al. 2019,US patent allowances,Worker share of patent-induced operating surplus,29.0,cents per dollar,Author working paper abstract
+Autor & Kausik 2026,US 1954-2019,Share of real wage growth attributable to declining labor share,16.0,percent,MIT working paper abstract

@@ -1,5 +1,5 @@
 ---
-title: "失われたアメリカン・ドリーム"
+title: "失われたアメリカン・ドリーム?"
 subtitle: "豊かさと閉塞感の経済学"
 format: 
     touying-typst:

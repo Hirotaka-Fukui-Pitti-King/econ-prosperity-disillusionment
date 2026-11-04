@@ -1,0 +1,6 @@
+PASS static cost parity / capital cheaper: 84 grid points
+PASS static factor shares / zero-profit and finite-difference marginal product identities
+PASS analytical full-automation dynamic Euler / goods resource / saving identity
+PASS long-run fixed-saving threshold: 0.245016; calibrated optimizer growth: 0.116000
+PASS figure generation: 13, 14, 15, 16, 17
+NOTE Figure 15 is an immediate-AK mathematical exercise, not a reproduction of 2025-2045 paper transition.

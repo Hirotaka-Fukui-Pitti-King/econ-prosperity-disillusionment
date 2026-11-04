@@ -1,5 +1,5 @@
 ---
-title: "若い世代は本当に親の世代より貧しくなったのか?"
+title: "親より豊かになれない時代？"
 subtitle: "豊かさと閉塞感の経済学"
 format: 
     touying-typst:

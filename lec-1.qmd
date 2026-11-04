@@ -1,5 +1,5 @@
 ---
-title: "人々は悲観的になったのか?"
+title: "希望はどこへ消えたのか？"
 subtitle: "豊かさと閉塞感の経済学"
 format: 
     touying-typst:

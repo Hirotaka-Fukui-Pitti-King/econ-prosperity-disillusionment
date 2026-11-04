@@ -1,0 +1,288 @@
+---
+title: "経済成長の果実はだれのもの?"
+subtitle: "豊かさと閉塞感の経済学"
+format: 
+    touying-typst:
+        bibliographystyle: "chicago-author-date"
+        fontsize: 20pt
+        commands: [small, small-cite, tiny, tiny-cite, nano, nano-cite]
+        include-in-header:
+          - text: |
+              #show math.equation: set text(
+                font: ("New Computer Modern Math", "Meiryo"),
+                fallback: true,
+              )
+theme: stargazer
+author:
+  - name: "Hirotaka Fukui"
+    email: "227e127e@gsuite.kobe-u.ac.jp"
+    orcid: 0009-0004-9796-9148
+    affiliations:
+      - name: "Kobe University, Graduate School of Economics"
+bibliography: references.bib
+date: today
+date-format: long
+execute: 
+  echo: false
+  warning: false
+  message: false
+brand:
+  typography:      
+    fonts:
+      - family: Meiryo
+        source: system
+    base: Meiryo
+    headings: Meiryo
+knitr:
+  opts_chunk: 
+    fig.align: center
+    dev: svg
+---
+
+# Introduction
+
+## Why Has Growth Become Less Equally Shared?
+
+- 本講義の中心的な問いは、次のとおりです。
+
+> なぜ生産性を上昇させる技術進歩が、必ずしも幅広い労働者の賃金上昇につながらないのでしょうか。
+
+- この問いに答えるには、技術進歩によって社会全体が豊かになるという命題と、その利益が各労働者にどのように分配されるかという命題を分離する必要があります。
+
+## Why Has Growth Become Less Equally Shared?
+
+- 例えば、ある工場が従来100人の労働者によって行っていた作業の一部をロボットに置き換えたとします。
+- その結果，工場の生産費用が低下し、製品価格が下がり、生産量が増える可能性があります。
+- 一方で、従来その作業を担当していた労働者への需要は減少します。
+- さらに、賃金の一部が企業固有の余剰の分配であった場合、労働者は雇用だけでなく、それまで受け取っていた賃金プレミアムも失う可能性があります。
+
+## Why Has Growth Become Less Equally Shared?
+
+- ここには少なくとも三つの異なる経済的効果が存在します。
+  
+  1. Productivity effect： 生産費用の低下による実質所得・生産規模の増加。
+  2. Displacement effect： 労働者が従来担当していたtaskを資本が代替することによる労働需要の減少。
+  3. Rent dissipation： 高い賃金プレミアムを伴うtaskが自動化され、労働者に分配されていたrentsが消失すること。
+
+- この三つの効果は同時に発生し得ます。したがって、automationの厚生効果を評価する際には、生産性の変化だけでも、賃金の変化だけでも不十分です。
+
+- 本講義では、標準的なSkill-Biased Technological Change（SBTC）モデルを出発点に、そのモデルで説明できないtask displacementを明らかにします。そのうえで、worker rents、賃金交渉、企業間再配分を導入し、技術進歩の利益がどのような条件の下で広く分配されるかを考えます。
+
+# Measuring the Distribution of Growth
+
+## 会計恒等式
+
+- 名目付加価値を $Y$、総労働時間を $H$、同じ範囲の労働者に支払われる総労働報酬を $W$、時間当たりの平均報酬を $\overline w=W/H$、中央値報酬を $w^{med}$ とします。
+- 労働分配率を $s_L=W/Y$ とすると，
+
+    $$
+    \frac{Y/H}{\overline w}=\frac{Y/H}{W/H}=\frac{Y}{W}=\frac1{s_L},
+    $$
+
+    ゆえに恒等的に
+
+    $$
+    \log\frac{Y/H}{w^{med}}
+    = -\log s_L+\log\frac{\overline w}{w^{med}}.
+    $$
+
+    時点差をとれば
+
+    $$
+    \Delta\log (Y/H)-\Delta\log w^{med}
+    =-\Delta\log s_L+\Delta\log(\overline w/w^{med}).
+    $$
+
+## 会計恒等式
+
+- 第1項はcapital versus labor、 第2項はaverage versus typical workerの分配を表しています。
+- 例えば集計賃金が上がっても極端な上位労働者の報酬上昇によって平均が引き上げられれば、中央値との距離は拡大します。
+- 労働者集団間格差と集団内格差はこの第2項の異なる内訳となります。
+- また，物価指数による調整注意する必要があります。
+- 名目付加価値 $Y$ を生産物デフレータ $P_Y$、賃金を消費者物価指数 $P_C$ で実質化する場合、
+  
+  $$
+    \log\frac{(Y/P_Y)/H}{w^{med}/P_C}
+    =-\log s_L+\log(\overline w/w^{med})+\log(P_C/P_Y).
+    $$
+
+- 右辺の賃金は名目で、同じ時間・労働者・報酬範囲を使っています。したがってデフレータの違いが見かけのdivergenceを生んでしまいます
+- self-employment、benefits、sectoral coverage、労働時間の測定誤差にも注意が必要です。
+
+## DivergenceとDelinkage
+
+- **Divergence** は長期の水準ないし累積成長率の差、
+- **Delinkage** は限界的な生産性成長率変化に対する賃金成長率の反応の消失を意味します。
+- 例えば, 
+  
+  $$
+    \Delta\log w^{med}_t=\alpha+\beta\,\Delta\log(Y_t/H_t)+X_t'\gamma+u_t
+    $$
+
+    で $\beta>0$ でありながら、$-\Delta\log s_L+\Delta\log(\overline w/w^{med})>0$ が継続し得ます。
+
+- @GreensponStansburySummers2021 は米国・カナダ双方にdivergenceを確認する一方、両国とも生産性と賃金成長率の正のlinkageが残ると報告する。
+
+![DivergenceとDelinkage](lec-4\figures\figure_01.png){#fig-divergence-delinkage}
+
+# The Canonical SBTC Model
+
+- 高技能労働 $H$ と低技能労働 $L$ を用いたCES技術を考えます。$\sigma>0$ は代替弾力性で、ここでは $\sigma\ne1$ とします。
+
+    $$
+    Y=\left[(A_HH)^{\frac{\sigma-1}{\sigma}}+(A_LL)^{\frac{\sigma-1}{\sigma}}\right]^{\frac{\sigma}{\sigma-1}}.\tag{4}
+    $$ {#eq-ces-tech}
+
+- 産出物価格をニューメレールとして1とすると、賃金 $w_H,w_L$ に対する競争企業の問題は
+
+    $$
+    \max_{H,L\ge0}\;Y(H,L)-w_HH-w_LL.
+    $$
+
+    と書けます．一階条件 $w_H=\partial Y/\partial H$, $w_L=\partial Y/\partial L$ は $\rho=(\sigma-1)/\sigma$ を用いると、$Y^\rho=(A_HH)^\rho+(A_LL)^\rho$ より、
+
+    $$
+    \rho Y^{\rho-1}\frac{\partial Y}{\partial H}
+    =\rho A_H^\rho H^{\rho-1},
+    $$
+
+    よって,
+
+    $$
+    \begin{align}
+    w_H & =Y^{1/\sigma} A_H^{(\sigma-1)/\sigma}H^{-1/\sigma}, \\
+    w_L & =Y^{1/\sigma} A_L^{(\sigma-1)/\sigma}L^{-1/\sigma}.
+    \end{align}
+    $$
+
+- 両者の比からskill premiumを得ます．
+  
+  $$
+    \frac{w_H}{w_L}
+    =\left(\frac{A_H}{A_L}\right)^{\frac{\sigma-1}{\sigma}}
+    \left(\frac{H}{L}\right)^{-1/\sigma}.
+    $$
+
+## The Canonical SBTC Model
+
+- 対数微分すると
+
+    $$
+    d\log(w_H/w_L)
+    =\frac{\sigma-1}{\sigma}d\log(A_H/A_L)
+    -\frac1\sigma d\log(H/L).
+    $$
+
+- $\sigma>1$ なら高技能に有利な相対技術進歩はskill premiumを引き上げ、高技能労働供給の増加はそれを引き下げます。後者の負号は任意の $\sigma>0$ で成立します。
+- 一方、@eq-ces-tech の特定のパラメータでは $\sigma<1$ のとき相対技術の符号が逆転するため、一般に「高技能生産性上昇で必ずskill premiumが上昇する」とは言えない部分があります。
+
+## The Canonical SBTC Model
+
+- @KatzMurphy1992 を出発点とする標準的な相対需要・相対供給モデルでは、高技能労働への相対需要と相対供給の変化によって、高技能労働者と低技能労働者の賃金格差がどのように決まるかを説明します。
+- @goldin2008race は、この枠組みを米国の長期的な歴史分析に適用し、教育供給の拡大と技能偏向的技術進歩による相対需要の増加との競争によって、教育間賃金格差の変化を説明しました。
+
+## The Canonical SBTC Model
+
+- しかし、高技能労働と低技能労働の2種類の投入からなるCESモデルでは、中技能労働者が担当するroutine tasksが選択的に機械に代替され、高技能職と低技能職の雇用割合が相対的に増加する**job polarization（雇用の二極化）**を直接説明できません。
+- 技術進歩を相対生産性 $A_H/A_L$ の変化として表現することはできますが、それだけでは、なぜ特定のtaskが機械に代替されるのか、企業がどのような条件でautomationを採用するのかを説明できません。
+
+## The Canonical SBTC Model
+
+- そこでtask-based modelでは、生産活動を個々のtaskに分解し、企業が各taskを労働と資本のどちらに割り当てるかを内生的に決定します。
+- これによって、どのtaskが自動化され、従来そのtaskを担当していた労働者への需要がどのように変化するかを分析できます。
+
+![Skill Premium](lec-4\figures\figure_02.png){#fig-skill-premium}
+
+# The Task-Based Model
+
+- ここからは @AcemogluRestrepo2022 の 一部門Task-Based Modelに沿って説明します。
+- 測度 $M$ のtask集合 $T$、代替弾力性 $\lambda$ に対し、最終財 $y$ の生産技術を
+
+  $$
+    y=\left[\frac1M\int_T\{M y(x)\}^{\frac{\lambda-1}{\lambda}}dx\right]^{\frac\lambda{\lambda-1}}.\tag{8}
+    $$
+
+    とします．
+
+- 例えば、シャツを生産するには、デザイン、紡績、織布、染色、輸送、販売など、多数のtaskが必要です。
+- このモデルでは、それぞれのtaskをどれだけ実行するかによって、最終的なシャツの生産量が決まります。
+
+## The Task-Based Model
+
+$$
+\begin{align}
+& \lambda>1： \text{task間の代替が比較的容易} \\
+& \lambda=1 \text{：Cobb–Douglas型} \\
+& 0<\lambda<1 \text{：task間の補完性が強く、特定のtaskが不足すると全体の生産が制約される} \\
+& \lambda\to0 \text{：完全補完（Leontief型）}
+\end{align}
+$$
+
+- 例えば、工場で製品の組立作業だけが大幅に効率化されても、品質検査が極端に不足していれば完成品の生産量はあまり増えません。このような生産上のボトルネックは、$\lambda$ が小さい場合に強く現れます。
+
+
+## The Task-Based Model
+
+- taskごとの生産は
+
+    $$
+    y(x)=A_k\psi_k(x)k(x)+\sum_{g\in\mathcal G}A_g\psi_g(x)\ell_g(x).\tag{9}
+    $$
+
+    ここで $\psi_g(x),\psi_k(x)$ は各taskでの生産性, $k(x)$ はtask $x$ に投入される資本、$\ell_g(x)$ は労働者集団 $g\in\mathcal G$ の労働投入, $A_g,A_k$ はfactor-augmenting technologyです。
+
+    実行不可能なtaskでは生産性を0と置きます。task-specific capitalは最終財を用いて限界費用 $1/q(x)$ で生産します。
+
+- 機械が特定のtaskを代替すると、そのtaskの費用が低下する一方、従来そのtaskを担当していた労働者への需要が変化します。その影響が最終財生産と一般均衡の賃金へどう波及するかは、task間の代替弾力性 $\lambda$ にも依存します。
+
+## The Task-Based Model
+
+- 財市場の資源制約は
+    $$
+    c=y-\int_T\frac{k(x)}{q(x)}\,dx,
+    $$
+
+- 労働市場の清算条件は
+    $$
+    \int_T\ell_g(x)\,dx=\ell_g.\tag{10}
+    $$
+
+- 財市場では、機械を生産するために使用した最終財を消費に回すことはできません。一方、労働市場では、各taskへの労働投入の合計が利用可能な労働供給と一致しなければなりません。
+
+## The Task-Based Model
+
+- 労働者集団 $g$ が1単位のtaskを実行する費用は、
+  
+  $$
+    p_x^g =\frac{w_g}{A_g\psi_g(x)}
+  $$
+
+- そのtaskを機械で実行する費用は、
+  $$
+    p_x^k =\frac1{A_k\psi_k(x)q(x)}, 
+  $$
+
+  です．ここで、$w_g$ は賃金、$A_g\psi_g(x)$ は労働の生産性、$A_k\psi_k(x)$ は機械の生産性、$q(x)$ は資本財の生産効率です。企業はこれらの費用を比較します。
+
+## The Task-Based Model
+
+- 他の条件を固定して賃金が上昇すると費用が上がり，それまで労働者が担当していたtaskが機械に割り当てられます。逆に、機械の生産性が上昇し、その単位費用が低下した場合にも同じことが起こります。
+
+## The Task-Based Model
+
+- 企業の費用最小化からfactor demandを導出します．最終財の限界的なtask需要価格は
+
+    $$
+    p_x=\frac{\partial y}{\partial y(x)}
+    =\left(\frac{y}{My(x)}\right)^{1/\lambda},
+    \qquad y(x)=\frac{y}{M p_x^\lambda}.\tag{13}
+    $$
+
+- 労働者 $g$ が実行する $x\in T_g$ では $p_x=w_g/(A_g\psi_g(x))$ なので
+
+{{< appendix >}}
+
+# Appendix
+
+::: {#refs}
+:::
