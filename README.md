@@ -19,10 +19,10 @@
 
 | 講義 | 主題・中心的な問い | 中核文献 |
 | :--- | :--- | :--- |
-| **第1講** | **失われた未来という謎**：本当に昔の人々の方が将来に楽観的だったのか。経済成長、将来期待、幸福度を区別し、国・年齢・世代ごとの歴史的変化を検証する。 | Matsumoto et al. (2024)<br>Graham et al. (2026) |
-| **第2講** | **若い世代は本当に貧しくなったのか**：実質賃金、税・移転後所得、消費、生涯所得、住宅、資産を比較する。所得定義・価格指数・家族構成によって結論が変わる理由を学ぶ。 | Corinth–Larrimore (2026)<br>Guvenen et al. (2022)<br>Fisher–Johnson (2022) |
-| **第3講** | **消えゆくアメリカンドリーム**：Absolute mobilityとrelative mobilityの違い、Chetty et al. のcopula法、成長と所得分配の反実仮想を導出する。 | Chetty et al. (2017)<br>Winship (2022)<br>Manduca et al. (2024) |
-| **第4講** | **なぜ成長の利益が均等に分配されなくなったのか**：Task-based technological change、automation、rent dissipation、労働市場制度を結び付ける。 | Acemoglu–Restrepo (2022, 2026)<br>Autor et al. (2020) |
+| **第1講** | **希望はどこへ消えたのか？**：昔と比べて人々は悲観的になってしまったのか。経済成長、将来期待、幸福度を区別し、国・年齢・世代ごとの歴史的変化を検証する。 | Matsumoto et al. (2024)<br>Graham et al. (2026) |
+| **第2講** | **親より豊かになれない時代？**：実質賃金、税・移転後所得、消費、生涯所得、住宅、資産を比較する。所得定義・価格指数・家族構成によって結論が変わる理由を学ぶ。 | Corinth–Larrimore (2026)<br>Guvenen et al. (2022)<br>Fisher–Johnson (2022) |
+| **第3講** | **消えゆくアメリカンドリーム?**：Absolute mobilityとrelative mobilityの違い、Chetty et al. のcopula法、成長と所得分配の反実仮想を導出する。 | Chetty et al. (2017)<br>Winship (2022)<br>Manduca et al. (2024) |
+| **第4講** | **経済成長の果実はだれのもの?**：Task-based technological change、automation、rent dissipation、労働市場制度を結び付ける。 | Acemoglu–Restrepo (2022, 2026)<br>Autor et al. (2020) |
 
 ## Part II — Why Doesn't Greater Income Guarantee Greater Well-Being?
 
