@@ -1,0 +1,209 @@
+---
+title: "人々は悲観的になったのか?"
+subtitle: "豊かさと閉塞感の経済学"
+format: 
+    touying-typst:
+        bibliographystyle: "chicago-author-date"
+        fontsize: 20pt
+        commands: [small, small-cite, tiny, tiny-cite, nano, nano-cite]
+        include-in-header:
+          - text: |
+              #show math.equation: set text(
+                font: ("New Computer Modern Math", "Meiryo"),
+                fallback: true,
+              )
+theme: stargazer
+author:
+  - name: "Hirotaka Fukui"
+    email: "227e127e@gsuite.kobe-u.ac.jp"
+    orcid: 0009-0004-9796-9148
+    affiliations:
+      - name: "Kobe University, Graduate School of Economics"
+bibliography: references.bib
+date: today
+date-format: long
+execute: 
+  echo: false
+  warning: false
+  message: false
+brand:
+  typography:      
+    fonts:
+      - family: Meiryo
+        source: system
+    base: Meiryo
+    headings: Meiryo
+knitr:
+  opts_chunk: 
+    fig.align: center
+    dev: svg
+---
+
+# Introduction
+
+## 中心的な問い
+
+- Why can a society become materially richer while its people grow more pessimistic about the future?
+
+- なぜ社会が物質的に豊かになっても、人々は将来に対して悲観的になり得るのでしょうか。そして、そのような変化は歴史的事実として本当に観測されるのでしょうか。
+
+## Overview — 問題の所在
+
+- 「昔の人々は未来を信じていた」「経済成長が続いていた時代には、明日が今日より良くなると誰もが考えていた」という主張には直感的な説得力があります。
+- しかし、所得が急速に増加していたことと、人々が自分の将来を楽観視していたことは、異なる経験的命題です。この区別は、経済学の研究対象を決定します。
+
+## Overview — 問題の所在
+
+- 例えば、1960年代の日本で実質所得が急速に増えていたとしても、当時の人々が将来の所得成長をどのように予想していたかは、その事実だけからは分かりません。
+- 経済成長を当然と考えていた可能性もあれば、将来の失業や物価上昇を恐れていた可能性もあります。
+
+- 逆に、現在の日本で経済成長率が低下していても、若い世代が必ずしも高齢世代より悲観的とは限りません。
+- 若い世代は低成長を通常の状態として受け入れ、高度成長を経験した世代の方が、現在の経済状況を失望を伴って評価する可能性があります。
+
+## Overview — 問題の所在
+
+- 実際、@MATSUMOTO2024102830 は、日本において形成期に高い経済成長を経験した出生コーホートほど、後年の現在および将来の経済を悲観的に評価するという結果を報告しています。
+- この結果は、「高成長時代を経験した人ほど、将来に希望を持つ」という単純な歴史観に対する重要な反例です。
+- ただし、後述するように、この関係を経済成長経験の因果効果と直ちに解釈することはできません。
+
+## 五つの独立した経験的命題
+
+- この講義では、以下を区別します。
+
+  1. 長期的な物質的豊かさの増加
+  2. 世代間の経済的上昇機会の低下
+  3. 自分自身の将来への悲観の増加
+  4. 国全体・世界の将来への悲観の増加
+  5. 主観的幸福度の低下
+
+- これらは相互に関連していますが、一つの命題が成立することから、別の命題の成立を論理的に導くことはできません。
+
+## 五つの独立した経験的命題
+
+- それぞれに対応する検証すべき統計的データが存在します。
+
+  1. 実質一人当たりGDP、実質可処分所得、実質消費
+  2. 子の所得が親の所得を上回る確率
+  3. 主観的な将来所得予想、家計見通し
+  4. 国民経済の見通し、次世代の生活水準予想
+  5. Life satisfaction、Cantril ladder、経験された感情
+
+## 歴史的な問いを定式化する
+
+- 国 $j$、時点 $t$ において、個人 $i$ が将来の家計所得について抱く予想を
+
+    $$
+        \mathbb E_{i,t}[Y_{i,t+h}]
+    $$
+
+    とします．ここで $h$ は予測期間、$\mathbb E_{i,t}$ は個人が時点 $t$ に利用可能な情報に基づく主観的期待です。
+
+## 歴史的な問いを定式化する
+
+- 「昔の人々の方が将来を楽観視していた」という命題を直接検証するには、同じ予測対象・予測期間について、過去と現在の主観的予想を比較する必要があります。
+- 例えば
+  
+  $$
+    \mathbb E \left[\mathbb E_{i,t}[Y_{i,t+h}-Y_{it}]\mid t=1965\right] > \mathbb E \left[ \mathbb E_{i,t}[Y_{i,t+h}-Y_{it}] \mid t=2025 \right]
+  $$
+
+  という不等式を検証することが考えられます。
+
+$$
+\underbrace{
+\mathbb E\left[
+\underbrace{
+\mathbb E_{i,t}[Y_{i,t+h}-Y_{it}]
+}_{\text{個人 }i\text{ の主観的予想}}
+\mid t
+\right]
+}_{\text{時点 }t\text{ における人口平均}}
+$$
+
+## 歴史的な問いを定式化する
+
+- この不等式は、調査対象、予測期間、所得の定義、質問の意味が比較可能であるという条件の下で、過去の人々の方が将来所得の増加を大きく予想していたことを意味します。
+- 重要なのは1965年の実現GDP成長率が2025年より高かったという事実は、この不等式の証拠にはならないことです。
+
+# Facts
+
+## 経済成長と将来期待の実証的事実
+
+- 2026年時点の国際比較研究からは、先進国の一部で主観的な経済・社会評価が悪化していることが確認できます。
+- @GrahamHarrisNairOMalley2026 の44か国分析では、2006～2024年の主観的well-being合成指標について、統計的に有意な改善が17か国、有意な悪化が17か国で観測されています。
+- 東欧諸国では改善が広く観測される一方、欧米諸国の多くでは悪化しています。
+
+## 米国と日本の実質所得
+
+## 世代間移動の歴史的変化
+
+## 現在の将来予想の国や評価対象による差異
+
+## 日本の短期的な経済見通し
+
+## 世界の主観的生活評価
+
+# Concepts and Measurement
+
+## 何を「悲観」と呼ぶのか
+
+## Quantitative Expectations と Qualitative Expectations
+
+## 期待値と不確実性の数学的区別
+
+## Retrospective / Prospective と Egocentric / Sociotropic
+
+## データごとの観測可能性と制約
+
+## 観測回答と潜在的な評価を結ぶ測定モデル
+
+# Age–Period–Cohort Models
+
+## 基本モデル
+
+## APCの線形トレンドは一意に識別されない
+
+## 非線形APCモデルでも基本的な問題は残る
+
+## 何が識別され得るのか：曲率と線形ドリフト
+
+## Identification constraints
+
+## Bayesian APC と事前分布の役割
+
+## 感度分析で確認すべき対象
+
+## Formative growth の構築と別の識別問題
+
+## どのような追加variationが必要か
+
+## Partial identification の考え方
+
+# United States
+
+## Is the United States an Outlier?
+
+# Economic Interpretation
+
+# What We Know and What We Do Not Know
+
+# Was the Future Really Brighter in the Past?
+
+## まとめ
+
+1. 昔の人々の方が現在の人々より将来を楽観視していたという一般的な歴史命題は、まだ立証されていません。 過去の経済成長率が高かったという事実は、過去の人々が抱いていた主観的な将来予想の観測値ではありません。
+2. 豊かさの増加と悲観の増加は実際に併存し得ます。 米国では実質一人当たりGDPが上昇する一方、近年の希望や制度への信頼の肯定的回答が低下しています。ただし、主観的指標ごとの変化の大きさは異なります。
+3. この現象は世界共通ではありません。 東欧諸国などでは主観的well-beingの改善が観測されます。したがって、説明すべき対象は「人類の希望の喪失」という一つの世界的な時系列ではなく、国、世代、予測対象、評価指標によって異なる複数の変化です。
+4. 出生コーホート差を観測できても、形成期の経済成長による因果効果を識別したことにはなりません。 APCの線形ドリフトの非識別性と、全国共通の形成期GDP成長が他のコーホート要因と分離できない問題の両方が残ります。
+
+- How do changes in realized economic opportunities translate into changes in subjective expectations, and why does this relationship differ across cohorts and countries?
+
+- 実際の経済的機会の変化は、どのように人々の主観的な将来期待へ反映されるのでしょうか。そして、その対応関係が出生コーホートや国によって異なるのはなぜでしょうか。
+- 「昔は未来が明るかった」という歴史観をそのまま説明するのではなく、実際の経済的機会と主観的な将来期待の間にある対応関係を、測定可能で識別可能な研究対象へ変換することが分析の出発点です。
+
+{{< appendix >}}
+
+# Appendix
+
+::: {#refs}
+:::

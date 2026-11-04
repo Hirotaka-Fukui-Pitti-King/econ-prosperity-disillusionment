@@ -1,0 +1,51 @@
+---
+title: "失われたアメリカン・ドリーム"
+subtitle: "豊かさと閉塞感の経済学"
+format: 
+    touying-typst:
+        bibliographystyle: "chicago-author-date"
+        fontsize: 20pt
+        commands: [small, small-cite, tiny, tiny-cite, nano, nano-cite]
+        include-in-header:
+          - text: |
+              #show math.equation: set text(
+                font: ("New Computer Modern Math", "Meiryo"),
+                fallback: true,
+              )
+theme: stargazer
+author:
+  - name: "Hirotaka Fukui"
+    email: "227e127e@gsuite.kobe-u.ac.jp"
+    orcid: 0009-0004-9796-9148
+    affiliations:
+      - name: "Kobe University, Graduate School of Economics"
+bibliography: references.bib
+date: today
+date-format: long
+execute: 
+  echo: false
+  warning: false
+  message: false
+brand:
+  typography:      
+    fonts:
+      - family: Meiryo
+        source: system
+    base: Meiryo
+    headings: Meiryo
+knitr:
+  opts_chunk: 
+    fig.align: center
+    dev: svg
+---
+
+# Introduction
+
+## 
+
+{{< appendix >}}
+
+# Appendix
+
+::: {#refs}
+:::
